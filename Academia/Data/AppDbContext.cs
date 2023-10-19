@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Academia.Models;
 
+
 namespace Academia.Data
 {
     public class AppDbContext : DbContext
