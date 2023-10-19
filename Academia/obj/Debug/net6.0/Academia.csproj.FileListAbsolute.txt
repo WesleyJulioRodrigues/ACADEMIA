@@ -1,0 +1,108 @@
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\appsettings.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Academia.staticwebassets.runtime.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Academia.exe
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Academia.deps.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Academia.runtimeconfig.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Academia.pdb
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Humanizer.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.csproj.AssemblyReference.cache
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.AssemblyInfoInputs.cache
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.AssemblyInfo.cs
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.csproj.CoreCompileInputs.cache
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.RazorAssemblyInfo.cache
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.RazorAssemblyInfo.cs
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets\msbuild.Academia.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets\msbuild.build.Academia.props
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Academia.props
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Academia.props
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\scopedcss\bundle\Academia.styles.css
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\scopedcss\projectbundle\Academia.bundle.scp.css
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.csproj.CopyComplete
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\refint\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.pdb
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\Academia.genruntimeconfig.cache
+C:\Users\etec\Desktop\ACADEMIA (1)\Academia\obj\Debug\net6.0\ref\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\appsettings.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Academia.staticwebassets.runtime.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Academia.exe
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Academia.deps.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Academia.runtimeconfig.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Academia.pdb
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Humanizer.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\System.CodeDom.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.csproj.AssemblyReference.cache
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.AssemblyInfoInputs.cache
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.AssemblyInfo.cs
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.csproj.CoreCompileInputs.cache
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.RazorAssemblyInfo.cache
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.RazorAssemblyInfo.cs
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets\msbuild.Academia.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets\msbuild.build.Academia.props
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Academia.props
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Academia.props
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\scopedcss\bundle\Academia.styles.css
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\scopedcss\projectbundle\Academia.bundle.scp.css
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.csproj.CopyComplete
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\refint\Academia.dll
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.pdb
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\Academia.genruntimeconfig.cache
+C:\Users\etec\Desktop\ACADEMIA\Academia\obj\Debug\net6.0\ref\Academia.dll
