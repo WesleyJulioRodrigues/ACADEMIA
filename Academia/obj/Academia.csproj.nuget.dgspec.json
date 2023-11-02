@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\etec\\Desktop\\ACADEMIA\\Academia\\Academia.csproj": {}
+    "C:\\Users\\etec\\Documents\\GitHub\\ACADEMIA\\Academia\\Academia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\etec\\Desktop\\ACADEMIA\\Academia\\Academia.csproj": {
+    "C:\\Users\\etec\\Documents\\GitHub\\ACADEMIA\\Academia\\Academia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\etec\\Desktop\\ACADEMIA\\Academia\\Academia.csproj",
+        "projectUniqueName": "C:\\Users\\etec\\Documents\\GitHub\\ACADEMIA\\Academia\\Academia.csproj",
         "projectName": "Academia",
-        "projectPath": "C:\\Users\\etec\\Desktop\\ACADEMIA\\Academia\\Academia.csproj",
+        "projectPath": "C:\\Users\\etec\\Documents\\GitHub\\ACADEMIA\\Academia\\Academia.csproj",
         "packagesPath": "C:\\Users\\etec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\etec\\Desktop\\ACADEMIA\\Academia\\obj\\",
+        "outputPath": "C:\\Users\\etec\\Documents\\GitHub\\ACADEMIA\\Academia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\etec\\AppData\\Roaming\\NuGet\\NuGet.Config",

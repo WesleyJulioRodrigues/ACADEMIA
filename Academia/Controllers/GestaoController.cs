@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Academia.Models;
+using Professor.Models;
 using Academia.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,9 +7,9 @@ namespace Academia.Controllers
 {
     public class ComidaRecomendadasController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly Contexto _context;
 
-        public ComidaRecomendadasController(AppDbContext context)
+        public ComidaRecomendadasController(Contexto context)
         {
             _context = context;
         }
@@ -35,7 +35,7 @@ namespace Academia.Controllers
         }
 
         // Ação para adicionar um Professor
-        public IActionResult AdicionarProfessor(Professor professor)
+        public IActionResult AdicionarProfessor(professor , Professor)
         {
             _context.Professores.Add(professor);
             _context.SaveChanges();

@@ -5,6 +5,8 @@ namespace Academia.Models
 {
     public class ComidaRecomendada
     {
+        [Key]
+
         public int Id { get; set; }
 
         [Required]
@@ -20,20 +22,5 @@ namespace Academia.Models
         public int Calorias { get; set; }
     }
 
-    public class Professor
-    {
-        public int Id { get; set; }
 
-        [Required]
-        public string Nome { get; set; }
-
-        [Required]
-        public string Especialidade { get; set; }
-
-        [EmailAddress]
-        public string Email { get; set; }
-
-        [Phone]
-        public string Telefone { get; set; }
-    }
 }

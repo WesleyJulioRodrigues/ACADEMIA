@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Academia.Data;
-
+    
 namespace Academia
 {
     public class Startup
