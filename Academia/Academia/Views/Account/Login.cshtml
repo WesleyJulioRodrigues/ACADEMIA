@@ -1,0 +1,62 @@
+@model Academia.ViewModels.LoginVM
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+<main class="container-fluid p-4">
+    <form method="post" asp-action="Login" asp-controller="Account">
+        <div class="text-center mb-4">
+            <img src="~/img/logo2.png" alt="Logo" width="350">
+        </div>
+        <input type="hidden" asp-for="UrlRetorno">
+        <div asp-validation-summary="ModelOnly" class="text-danger" hidden></div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control">
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Senha" class="form-label"></label>
+            <input asp-for="Senha" class="form-control">
+            <span asp-validation-for="Senha" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" asp-for="Lembrar" class="form-check-input">
+            <label asp-for="Lembrar" class="form-check-label"></label>
+        </div>
+
+        <button type="submit" class="w-100 btn btn-primary">Entrar</button>
+
+        <a asp-action="" class="d-block text-center mt-3 text-decoration-none">Esqueceu sua Senha?</a>
+
+        <div class="separator">
+            <div class="line"></div>
+            <h6>Novo por Aqui?</h6>
+            <div class="line"></div>
+        </div>
+
+        <a asp-action="" class="w-100 btn btn-success mt-1">Criar Conta</a>
+
+    </form>
+</main>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial"></partial>
+    <script>
+        let mensagemErro = '';
+        $('.validation-summary-errors ul li').each(function () {
+            mensagemErro += $(this).text();
+        });
+        if (mensagemErro != '') {
+            Swal.fire({
+                title: "Acesso Negado",
+                text: mensagemErro,
+                icon: "error"
+            });
+        }
+    </script>
+}

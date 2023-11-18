@@ -8,7 +8,7 @@ public class AppDbSeed
     public AppDbSeed(ModelBuilder builder)
     {
 
-        #region Populate Roles - Perfis de Usuário
+        
         List<IdentityRole> roles = new()
         {
             new IdentityRole()
@@ -28,12 +28,12 @@ public class AppDbSeed
                Id = Guid.NewGuid().ToString(),
                Name = "Cliente",
                NormalizedName = "CLIENTE"
-            }
+            },
         };
         builder.Entity<IdentityRole>().HasData(roles);
-        #endregion
+        
 
-        #region Populate IdentityUser
+       
         List<IdentityUser> users = new(){
             new IdentityUser(){
                 Id = Guid.NewGuid().ToString(),
@@ -63,5 +63,3 @@ public class AppDbSeed
 
     }
 }
-
-..
