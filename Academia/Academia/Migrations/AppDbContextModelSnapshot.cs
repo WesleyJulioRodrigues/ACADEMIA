@@ -59,7 +59,7 @@ namespace Academia.Migrations
                             Descricao = "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade",
                             Foto = "/imgs/Batata doce.jpg",
                             Nome = "Batata Doce",
-                            Tipo = ""
+                            Tipo = "Tubérculo, Carboidrato"
                         },
                         new
                         {
@@ -68,7 +68,7 @@ namespace Academia.Migrations
                             Descricao = "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.",
                             Foto = "/imgs/Frango.jpg",
                             Nome = "Frango",
-                            Tipo = ""
+                            Tipo = "Proteína animal"
                         });
                 });
 
@@ -190,6 +190,28 @@ namespace Academia.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Academia.Models.Usuario", b =>
+                {
+                    b.Property<string>("UsuarioId")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Foto")
+                        .HasMaxLength(300)
+                        .HasColumnType("varchar(300)");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasMaxLength(60)
+                        .HasColumnType("varchar(60)");
+
+                    b.HasKey("UsuarioId");
+
+                    b.ToTable("Usuario");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -214,6 +236,26 @@ namespace Academia.Migrations
                         .HasDatabaseName("RoleNameIndex");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "793be829-292b-4ab8-b6d7-7e56b7a95ec8",
+                            Name = "Administrador",
+                            NormalizedName = "ADMINISTRADOR"
+                        },
+                        new
+                        {
+                            Id = "fb960ba8-f685-47d1-b85b-8f2c7f87b71d",
+                            Name = "Funcionário",
+                            NormalizedName = "FUNCIONARIO"
+                        },
+                        new
+                        {
+                            Id = "8968740e-74f4-4eea-9f67-031135b9f006",
+                            Name = "Cliente",
+                            NormalizedName = "CLIENTE"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -301,6 +343,24 @@ namespace Academia.Migrations
                         .HasDatabaseName("UserNameIndex");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "7b716e2c-58f8-4f27-9c87-ebf9b31d25ce",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "36942546-3eb8-4068-9626-8cd749bd59e5",
+                            Email = "admin@academia.com",
+                            EmailConfirmed = true,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@ACADEMIA.COM",
+                            NormalizedUserName = "ADMIN",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFW4ojNarbzLGnWSlHTdUwoL9yaYAJfOif9UIvfkVqu2pGbrSvmm7OOeQNesqSw0ag==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "cfacb47b-69c3-4593-b0b2-746c242e2be5",
+                            TwoFactorEnabled = false,
+                            UserName = "Admin"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -380,6 +440,17 @@ namespace Academia.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Academia.Models.Usuario", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "AccountUser")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AccountUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

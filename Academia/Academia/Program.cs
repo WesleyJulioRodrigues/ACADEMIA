@@ -1,4 +1,5 @@
 using Academia.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,10 @@ string conn = builder.Configuration.GetConnectionString("Academia");
 builder.Services.AddDbContext<AppDbContext>( options =>
     options.UseMySql(conn, ServerVersion.AutoDetect(conn))
 );
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
 
 var app = builder.Build();
 

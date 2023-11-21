@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academia.Migrations
 {
     /// <inheritdoc />
-    public partial class criarbanco : Migration
+    public partial class criarBanco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -262,13 +262,52 @@ namespace Academia.Migrations
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
+            migrationBuilder.CreateTable(
+                name: "Usuario",
+                columns: table => new
+                {
+                    UsuarioId = table.Column<string>(type: "varchar(255)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Nome = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    DataNascimento = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    Foto = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: true)
+                        .Annotation("MySql:CharSet", "utf8mb4")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Usuario", x => x.UsuarioId);
+                    table.ForeignKey(
+                        name: "FK_Usuario_AspNetUsers_UsuarioId",
+                        column: x => x.UsuarioId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.InsertData(
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[,]
+                {
+                    { "793be829-292b-4ab8-b6d7-7e56b7a95ec8", null, "Administrador", "ADMINISTRADOR" },
+                    { "8968740e-74f4-4eea-9f67-031135b9f006", null, "Cliente", "CLIENTE" },
+                    { "fb960ba8-f685-47d1-b85b-8f2c7f87b71d", null, "Funcionário", "FUNCIONARIO" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { "7b716e2c-58f8-4f27-9c87-ebf9b31d25ce", 0, "36942546-3eb8-4068-9626-8cd749bd59e5", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAEFW4ojNarbzLGnWSlHTdUwoL9yaYAJfOif9UIvfkVqu2pGbrSvmm7OOeQNesqSw0ag==", null, false, "cfacb47b-69c3-4593-b0b2-746c242e2be5", false, "Admin" });
+
             migrationBuilder.InsertData(
                 table: "ComidaRecomendada",
                 columns: new[] { "Id", "Calorias", "Descricao", "Foto", "Nome", "Tipo" },
                 values: new object[,]
                 {
-                    { 1, 0, "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade", "/imgs/Batata doce.jpg", "Batata Doce", "" },
-                    { 2, 0, "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.", "/imgs/Frango.jpg", "Frango", "" }
+                    { 1, 0, "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade", "/imgs/Batata doce.jpg", "Batata Doce", "Tubérculo, Carboidrato" },
+                    { 2, 0, "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.", "/imgs/Frango.jpg", "Frango", "Proteína animal" }
                 });
 
             migrationBuilder.InsertData(
@@ -357,6 +396,9 @@ namespace Academia.Migrations
 
             migrationBuilder.DropTable(
                 name: "Professor");
+
+            migrationBuilder.DropTable(
+                name: "Usuario");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
