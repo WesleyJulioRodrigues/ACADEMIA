@@ -240,19 +240,19 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "793be829-292b-4ab8-b6d7-7e56b7a95ec8",
+                            Id = "55aaaf9b-842a-4b2e-affd-dbf74a27e235",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "fb960ba8-f685-47d1-b85b-8f2c7f87b71d",
+                            Id = "e9f8c931-139e-4e44-b5ee-d294636c6bff",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         },
                         new
                         {
-                            Id = "8968740e-74f4-4eea-9f67-031135b9f006",
+                            Id = "662c8a58-549c-4a5b-86d1-68608ab8cbaa",
                             Name = "Cliente",
                             NormalizedName = "CLIENTE"
                         });
@@ -347,17 +347,17 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7b716e2c-58f8-4f27-9c87-ebf9b31d25ce",
+                            Id = "5fed0bfc-1ce2-4d36-8052-fd72e09d6e00",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "36942546-3eb8-4068-9626-8cd749bd59e5",
+                            ConcurrencyStamp = "f1d29071-9af1-40ab-a605-8e372f8d93f3",
                             Email = "admin@academia.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ACADEMIA.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFW4ojNarbzLGnWSlHTdUwoL9yaYAJfOif9UIvfkVqu2pGbrSvmm7OOeQNesqSw0ag==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOUkVWDtvL6cAJwwHhooUTYlrhtRRnCJpWo/FwacoBv6qHM8ulQK9zHGI7V/d5d+7A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cfacb47b-69c3-4593-b0b2-746c242e2be5",
+                            SecurityStamp = "7cbca757-235b-4dd8-b493-19169a9390ea",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
