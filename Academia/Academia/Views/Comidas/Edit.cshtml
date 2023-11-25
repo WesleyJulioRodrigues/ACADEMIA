@@ -1,7 +1,7 @@
 @model Academia.Models.Comida
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Comidas";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
@@ -10,6 +10,7 @@
 <h4>Comida</h4>
 <hr />
 <div class="row">
+    <table id="myTable" class="table w-100"></table>
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -47,7 +48,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar para a Lista</a>
 </div>
 
 @section Scripts {

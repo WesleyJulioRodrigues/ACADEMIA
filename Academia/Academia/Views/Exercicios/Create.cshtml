@@ -1,16 +1,16 @@
-@model Academia.Models.Comida
+@model Academia.Models.Exercicio
 
 @{
-    ViewData["Title"] = "Comidas";
+    ViewData["Title"] = "Exercícios";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <h1>Criar</h1>
 
-<h4>Comida</h4>
+<h4>Exercicio</h4>
 <hr />
+<table id="myTable" class="table w-100">
 <div class="row">
-    <table id="myTable" class="table w-100"></table>
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -23,16 +23,6 @@
                 <label asp-for="Descricao" class="control-label"></label>
                 <input asp-for="Descricao" class="form-control" />
                 <span asp-validation-for="Descricao" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Tipo" class="control-label"></label>
-                <input asp-for="Tipo" class="form-control" />
-                <span asp-validation-for="Tipo" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Calorias" class="control-label"></label>
-                <input asp-for="Calorias" class="form-control" />
-                <span asp-validation-for="Calorias" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Foto" class="control-label"></label>
