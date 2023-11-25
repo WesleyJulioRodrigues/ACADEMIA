@@ -1,0 +1,44 @@
+main {
+  min-height: 100vh;
+}
+
+.nav-link {
+  margin-bottom: 5px;
+}
+
+.nav-link:hover {
+  background-color: #19705c !important;
+  color: white !important;
+}
+
+.nav-link.active {
+  background-color: #00B98E !important;
+  color: white !important;
+}
+
+.bi {
+  font-size: 20px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+.loader.simple-loader {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+  overflow: hidden !important;
+  right: 0px;
+  z-index: 1500;
+}
+
+.loader.simple-loader img{
+  width: 100px;
+}

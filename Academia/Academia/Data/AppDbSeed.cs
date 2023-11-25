@@ -101,13 +101,7 @@ public class AppDbSeed
                Id = Guid.NewGuid().ToString(),
                Name = "Funcionário",
                NormalizedName = "FUNCIONARIO"
-            },
-            new IdentityRole()
-            {
-               Id = Guid.NewGuid().ToString(),
-               Name = "Cliente",
-               NormalizedName = "CLIENTE"
-            },
+            }
         };
         builder.Entity<IdentityRole>().HasData(roles);
 
@@ -139,6 +133,22 @@ public class AppDbSeed
                 Foto = "/imgs/batata doce.jpg"
             }
         };
+        builder.Entity<Usuario>().HasData(usuarios);
+
+        #region Populate UserRole - Usuário com Perfil
+        List<IdentityUserRole<string>> userRoles = new()
+        {
+            new IdentityUserRole<string>() {
+                UserId = users[0].Id,
+                RoleId = roles[0].Id
+            },
+            new IdentityUserRole<string>() {
+                UserId = users[0].Id,
+                RoleId = roles[1].Id
+            }
+        };
+        builder.Entity<IdentityUserRole<string>>().HasData(userRoles);
+        #endregion
 
     }
 }
