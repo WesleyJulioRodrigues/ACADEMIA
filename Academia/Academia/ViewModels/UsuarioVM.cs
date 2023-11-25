@@ -10,4 +10,5 @@ public class UsuarioVM
     public string Foto { get; set; }
     public string Perfil { get; set; }
     public string TipoDev { get; set; }
+    public string UsuarioId { get; internal set; }
 }   

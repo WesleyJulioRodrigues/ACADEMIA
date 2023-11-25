@@ -1,0 +1,17 @@
+@inject ImobiliariaGallo.Services.IUsuarioService userService
+@{
+    var usuario = await userService.GetUsuarioLogado();
+}
+
+@if (usuario == null)
+{
+    <a asp-action="Login" asp-controller="Account" class="btn btn-primary px-3 d-none d-lg-flex">Login</a>
+}
+else
+{
+    <form method="POST" asp-action="Logout" asp-controller="Account">
+        <button type="submit" class="btn btn-primary px-3 d-none d-lg-flex">
+            Sair</button>
+    </form>
+}
+    
