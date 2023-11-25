@@ -75,13 +75,13 @@ public class AppDbSeed
             new() {
                 Id = 1,
                 Nome = "Douglas",
-                Descricao = "Esse é o nosso professor Lorival, formado em educação física,estará dísponivel para o que voçê precisar.",
+                Descricao = "Esse é o nosso professor Douglas que vai te auxiliar no que você precisar,formado em nutrição e em educação física.",
                 Foto = "/imgs/douglas.jpg"
             },
             new() {
                 Id = 2,
                 Nome = "Lorival",
-                Descricao = "Esse é o nosso professor Douglas que vai te auxiliar no que você precisar,formado em nutrição e em educação física.",
+                Descricao = "Esse é o nosso professor Lorival, formado em educação física,estará dísponivel para o que voçê precisar.",
                 Foto = "/imgs/Val.jpg"
             },
 

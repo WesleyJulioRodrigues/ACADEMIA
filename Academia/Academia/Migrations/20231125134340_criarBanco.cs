@@ -291,14 +291,14 @@ namespace Academia.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "6d68b8c1-186b-4caf-bbe5-653181b9fd40", null, "Funcionário", "FUNCIONARIO" },
-                    { "c316cd94-5900-4c0a-bf0f-823c1d712c01", null, "Administrador", "ADMINISTRADOR" }
+                    { "3aa01cae-49d6-4748-a1fd-8acf53e4110e", null, "Administrador", "ADMINISTRADOR" },
+                    { "c79feb41-0522-4b8f-9bdd-894ecee2d0a7", null, "Funcionário", "FUNCIONARIO" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "d328b95a-c170-4dad-b279-7015abd8fc54", 0, "18b55563-f2b3-4883-895e-f56a9060a90b", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAEGYZFhGr1AazCTRcFF2WDJTLcFaUS76UoxGmHjOuVXQC3kpA1XQ/wtV6Nnzan9X3gw==", null, false, "7acadc46-00d2-40fd-8dbb-3f502d12d6b0", false, "Admin" });
+                values: new object[] { "c2d68380-3a14-4fd6-aea3-623066016d3a", 0, "6a800ebb-6c88-4797-b716-fcf4745f1794", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAEFp6iOZCaIwYFQ8nx3OKYQPrSeS1touWm/2LItPzcqq2q85yn+WyW85WxNmVnVpd5w==", null, false, "bf36c24c-afe5-4c28-9e45-e1ebeeb74b70", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "ComidaRecomendada",
@@ -327,8 +327,8 @@ namespace Academia.Migrations
                 columns: new[] { "Id", "Descricao", "Facebook", "Foto", "Instagram", "Nome" },
                 values: new object[,]
                 {
-                    { 1, "Esse é o nosso professor Lorival, formado em educação física,estará dísponivel para o que voçê precisar.", null, "/imgs/douglas.jpg", null, "Douglas" },
-                    { 2, "Esse é o nosso professor Douglas que vai te auxiliar no que você precisar,formado em nutrição e em educação física.", null, "/imgs/Val.jpg", null, "Lorival" }
+                    { 1, "Esse é o nosso professor Douglas que vai te auxiliar no que você precisar,formado em nutrição e em educação física.", null, "/imgs/douglas.jpg", null, "Douglas" },
+                    { 2, "Esse é o nosso professor Lorival, formado em educação física,estará dísponivel para o que voçê precisar.", null, "/imgs/Val.jpg", null, "Lorival" }
                 });
 
             migrationBuilder.InsertData(
@@ -336,14 +336,14 @@ namespace Academia.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "6d68b8c1-186b-4caf-bbe5-653181b9fd40", "d328b95a-c170-4dad-b279-7015abd8fc54" },
-                    { "c316cd94-5900-4c0a-bf0f-823c1d712c01", "d328b95a-c170-4dad-b279-7015abd8fc54" }
+                    { "3aa01cae-49d6-4748-a1fd-8acf53e4110e", "c2d68380-3a14-4fd6-aea3-623066016d3a" },
+                    { "c79feb41-0522-4b8f-9bdd-894ecee2d0a7", "c2d68380-3a14-4fd6-aea3-623066016d3a" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "DataNascimento", "Foto", "Nome" },
-                values: new object[] { "d328b95a-c170-4dad-b279-7015abd8fc54", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "/imgs/batata doce.jpg", "Douglas" });
+                values: new object[] { "c2d68380-3a14-4fd6-aea3-623066016d3a", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "/imgs/batata doce.jpg", "Douglas" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

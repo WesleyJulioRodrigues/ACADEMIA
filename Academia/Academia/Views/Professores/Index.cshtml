@@ -1,0 +1,43 @@
+@model IEnumerable<Academia.Models.Professor>
+@{
+    ViewData["Title"] = "Professores";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+}
+@section Scripts {
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script src="~/js/datatables.js"></script>
+}
+
+<h1 class="display-4">Lista de Professores</h1>
+<p class="py-3">
+    <a class="btn btn-secondary" asp-action="Create"><i class="bi bi-plus-circle-fill"></i> Adicionar</a>
+</p>
+
+<table id="myTable" class="table w-100">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-title="Editar"><i class="bi bi-pencil-fill me-2"></i></a> 
+                    <a asp-action="Details" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-title="Detalhes"><i class="bi bi-search me-2"></i></a> 
+                    <a asp-action="Delete" asp-route-id="@item.Id" data-bs-toggle="tooltip" data-bs-title="Excluir"><i class="bi bi-trash-fill"></i></a>
+                </td>
+        </tr>
+}
+    </tbody>
+</table>

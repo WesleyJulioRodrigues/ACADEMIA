@@ -32,25 +32,25 @@
                     <li class="nav-item">
                         <a asp-action="Index" asp-controller="Admin" class="nav-link @(ViewBag.Title == "Dashboard" ? "active" : "link-body-emphasis")">
                             <i class="bi bi-speedometer2 me-2"></i>
-                            Dashboard
+                            Inicio 
                         </a>
                     </li>   
                     <li>
-                        <a asp-action="Index" asp-controller="Propriedades" class="nav-link @(ViewBag.Title == "Propriedades" ? "active" : "link-body-emphasis")">
-                           <i class="bi bi-person-circle"></i>
+                        <a asp-action="Index" asp-controller="Professores" class="nav-link @(ViewBag.Title == "Professores" ? "active" : "link-body-emphasis")">
+                           <i class="bi bi-person-circle me-2"></i>
                             Professores
                         </a>
                     </li>
                     <li>
-                        <a asp-action="Index" asp-controller="TipoPropriedades" class="nav-link @(ViewBag.Title == "Tipos de Propriedades" ? "active" : "link-body-emphasis")">
+                        <a asp-action="Index" asp-controller="Exercicios" class="nav-link @(ViewBag.Title == "Exercícios" ? "active" : "link-body-emphasis")">
                             <i class="bi bi-list-stars me-2"></i>
-                            Comidas e Exercícios
+                            Exercícios
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link @(ViewBag.Title == "Agentes" ? "active" : "link-body-emphasis")">
-                            <i class="bi bi-people-fill me-2"></i>
-                            Agentes
+                        <a asp-action="Index" asp-controller="Comidas" class="nav-link @(ViewBag.Title == "Comidas" ? "active" : "link-body-emphasis")">
+                            <i class="bi bi-list-stars me-2"></i>
+                            Comidas
                         </a>
                     </li>
                 </ul>

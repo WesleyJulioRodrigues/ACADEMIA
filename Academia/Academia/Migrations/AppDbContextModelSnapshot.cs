@@ -177,14 +177,14 @@ namespace Academia.Migrations
                         new
                         {
                             Id = 1,
-                            Descricao = "Esse é o nosso professor Lorival, formado em educação física,estará dísponivel para o que voçê precisar.",
+                            Descricao = "Esse é o nosso professor Douglas que vai te auxiliar no que você precisar,formado em nutrição e em educação física.",
                             Foto = "/imgs/douglas.jpg",
                             Nome = "Douglas"
                         },
                         new
                         {
                             Id = 2,
-                            Descricao = "Esse é o nosso professor Douglas que vai te auxiliar no que você precisar,formado em nutrição e em educação física.",
+                            Descricao = "Esse é o nosso professor Lorival, formado em educação física,estará dísponivel para o que voçê precisar.",
                             Foto = "/imgs/Val.jpg",
                             Nome = "Lorival"
                         });
@@ -214,7 +214,7 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "d328b95a-c170-4dad-b279-7015abd8fc54",
+                            UsuarioId = "c2d68380-3a14-4fd6-aea3-623066016d3a",
                             DataNascimento = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/imgs/batata doce.jpg",
                             Nome = "Douglas"
@@ -249,13 +249,13 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c316cd94-5900-4c0a-bf0f-823c1d712c01",
+                            Id = "3aa01cae-49d6-4748-a1fd-8acf53e4110e",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "6d68b8c1-186b-4caf-bbe5-653181b9fd40",
+                            Id = "c79feb41-0522-4b8f-9bdd-894ecee2d0a7",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         });
@@ -350,17 +350,17 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "d328b95a-c170-4dad-b279-7015abd8fc54",
+                            Id = "c2d68380-3a14-4fd6-aea3-623066016d3a",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "18b55563-f2b3-4883-895e-f56a9060a90b",
+                            ConcurrencyStamp = "6a800ebb-6c88-4797-b716-fcf4745f1794",
                             Email = "admin@academia.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ACADEMIA.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGYZFhGr1AazCTRcFF2WDJTLcFaUS76UoxGmHjOuVXQC3kpA1XQ/wtV6Nnzan9X3gw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFp6iOZCaIwYFQ8nx3OKYQPrSeS1touWm/2LItPzcqq2q85yn+WyW85WxNmVnVpd5w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7acadc46-00d2-40fd-8dbb-3f502d12d6b0",
+                            SecurityStamp = "bf36c24c-afe5-4c28-9e45-e1ebeeb74b70",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -428,13 +428,13 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "d328b95a-c170-4dad-b279-7015abd8fc54",
-                            RoleId = "c316cd94-5900-4c0a-bf0f-823c1d712c01"
+                            UserId = "c2d68380-3a14-4fd6-aea3-623066016d3a",
+                            RoleId = "3aa01cae-49d6-4748-a1fd-8acf53e4110e"
                         },
                         new
                         {
-                            UserId = "d328b95a-c170-4dad-b279-7015abd8fc54",
-                            RoleId = "6d68b8c1-186b-4caf-bbe5-653181b9fd40"
+                            UserId = "c2d68380-3a14-4fd6-aea3-623066016d3a",
+                            RoleId = "c79feb41-0522-4b8f-9bdd-894ecee2d0a7"
                         });
                 });
 
