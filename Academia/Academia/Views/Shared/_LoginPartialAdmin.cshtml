@@ -1,0 +1,26 @@
+@inject Academia.Services.IUsuarioService userService
+@{
+    var usuario = await userService.GetUsuarioLogado();
+}
+
+<div class="dropdown w-100" >
+    <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+        data-bs-toggle="dropdown" aria-expanded="false">
+        <img src='@(usuario.Foto ?? "/img/usuarios/no-photo.png")' alt="Foto de Perfil" width="40" class="image-rounded me-3">
+        <strong>@User.Identity?.Name</strong>
+    </a>
+    <ul class="dropdown-menu text-small shadow w-100">
+        <li><a class="dropdown-item" href="#">Perfil</a></li>
+        <li><a class="dropdown-item" href="#">Configurações</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li>
+            <form class="form-inline" asp-controller="Account" asp-action="Logout">
+                <button type="submit" class="dropdown-item">
+                    Sair
+                </button>
+            </form>
+        </li>
+    </ul>
+</div>

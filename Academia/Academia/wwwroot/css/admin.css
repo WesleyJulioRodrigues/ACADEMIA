@@ -7,14 +7,15 @@ main {
 }
 
 .nav-link:hover {
-  background-color: #19705c !important;
+  background-color: darkred !important;
   color: white !important;
 }
 
 .nav-link.active {
-  background-color: #00B98E !important;
+  background-color: rgb(104, 4, 4) !important;
   color: white !important;
 }
+
 
 .bi {
   font-size: 20px;

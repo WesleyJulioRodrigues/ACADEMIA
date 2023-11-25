@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Academia.Data;
 using Academia.ViewModels;
 
-namespace ImobiliariaGallo.Services;
+namespace Academia.Services;
 public class UsuarioService : IUsuarioService
 {
     private readonly AppDbContext _contexto;

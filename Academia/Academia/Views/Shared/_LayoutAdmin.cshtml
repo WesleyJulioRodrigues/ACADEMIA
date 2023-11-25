@@ -25,7 +25,6 @@
             <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
                 <a asp-action="Index" asp-controller="Admin"
                     class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                    <img class="img-fluid" src="~/img/icon-deal.png" alt="Logo" width="25">
                     <h1 class="fs-5 m-0 ms-3 ">HomeFitness</h1>
                 </a>
                 <hr>
@@ -35,29 +34,23 @@
                             <i class="bi bi-speedometer2 me-2"></i>
                             Dashboard
                         </a>
-                    </li>
+                    </li>   
                     <li>
                         <a asp-action="Index" asp-controller="Propriedades" class="nav-link @(ViewBag.Title == "Propriedades" ? "active" : "link-body-emphasis")">
-                            <i class="bi bi-house me-2"></i>
-                            Propriedades
+                           <i class="bi bi-person-circle"></i>
+                            Professores
                         </a>
                     </li>
                     <li>
                         <a asp-action="Index" asp-controller="TipoPropriedades" class="nav-link @(ViewBag.Title == "Tipos de Propriedades" ? "active" : "link-body-emphasis")">
                             <i class="bi bi-list-stars me-2"></i>
-                            Tipos de Propriedades
+                            Comidas e Exercícios
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link @(ViewBag.Title == "Agentes" ? "active" : "link-body-emphasis")">
                             <i class="bi bi-people-fill me-2"></i>
                             Agentes
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link @(ViewBag.Title == "Avaliações" ? "active" : "link-body-emphasis")">
-                            <i class="bi bi-chat-text-fill me-2"></i>
-                            Avaliações
                         </a>
                     </li>
                 </ul>

@@ -1,6 +1,6 @@
 using Academia.ViewModels;
 
-namespace ImobiliariaGallo.Services;
+namespace Academia.Services;
 
 public interface IUsuarioService
 {
