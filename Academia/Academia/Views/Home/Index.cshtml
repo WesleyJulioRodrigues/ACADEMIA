@@ -13,7 +13,6 @@
     <title>Home Fitness</title>
     <link rel="stylesheet" href="~/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
 </head>
 
 <body>
@@ -27,23 +26,6 @@
             </p>
 
         </div>
-
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
-
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#">Home Fitness</a></li>
-                <li><a class="menu__item" href="#">Exercícios</a></li>
-                <li><a class="menu__item" href="#">Professores</a></li>
-                <li><a class="menu__item" href="#">Dieta especial</a></li>
-                <li><a class="menu__item" href="#">Contato</a></li>
-            </ul>
-        </div>
-
         <div class="banner"></div>
     </section>
     <section id="Sobre" class="about view">
@@ -113,13 +95,13 @@
                     <p>@professor.Descricao</p>
                 </div>
             }
-            
+
         </div>
     </section>
 
 
     <section id="Dieta" class="Dieta view">
-       
+
         <div class="content">
             @foreach (var comida in Model.Comidas)
             {
@@ -153,5 +135,19 @@
     </section>
 
 </body>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+        <span></span>
+    </label>
+
+    <ul class="menu__box">
+        <li><a class="menu__item" href="#">Home</a></li>
+        <li><a class="menu__item" href="#">About</a></li>
+        <li><a class="menu__item" href="#">Team</a></li>
+        <li><a class="menu__item" href="#">Contatos</a></li>
+        <li><a class="menu__item" href="#">Twitter</a></li>
+    </ul>
+</div>
 
 </html>
