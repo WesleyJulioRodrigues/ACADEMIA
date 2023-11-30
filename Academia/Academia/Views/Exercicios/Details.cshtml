@@ -1,38 +1,31 @@
 @model Academia.Models.Exercicio
 
 @{
-    ViewData["Title"] = "Exercícios";
+    ViewData["Title"] = "Exercicios";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <h1>Detalhes</h1>
 
-<div>
-    <h4>Exercicio</h4>
-    <hr />
-    <dl class="row">
-        <table id="myTable" class="table w-100"></table>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descricao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descricao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Foto)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Foto)
-        </dd>
-    </dl>
+<h1 class="display-4">Exercícios</h1>
+<h4 class="display-6">Detalhes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 col-sm-12 col-xxl-3">
+        <div class="form-group">
+            <label asp-for="Foto" class="form-label"></label>
+            <img id="PreviewImage" src="@Model.Foto" class="img-fluid w-100">
+        </div>
+    </div>
+    <div class="col-md-8 col-sm-12 col-xxl-9">
+        <div class="col-12 mb-2">
+            <label asp-for="Nome" class="form-label"></label>
+            <input asp-for="Nome" class="form-control" disabled />
+        </div>
+    <div class="col-12 mt-4">
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-success me-3"><i class="bi bi-pencil-fill"></i>
+            Editar</a>
+        <a asp-action="Index" class="btn btn-primary"><i class="bi bi-arrow-left-circle-fill"></i> Voltar a Listagem</a>
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
-    <a asp-action="Index">Voltar para a Lista</a>
-</div>
+
