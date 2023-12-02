@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academia.Migrations
 {
     /// <inheritdoc />
-    public partial class criarbanco : Migration
+    public partial class criarBanco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -288,14 +288,14 @@ namespace Academia.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "20295eba-248f-4678-9e0d-1d02ba440e8e", null, "Funcionário", "FUNCIONARIO" },
-                    { "bc6300f2-3d46-487a-b068-954b5e8d4f4d", null, "Administrador", "ADMINISTRADOR" }
+                    { "a39f25be-af0c-4e31-8021-200096f7a4e4", null, "Funcionário", "FUNCIONARIO" },
+                    { "ce803062-3f47-4821-8c6c-7777cdd97497", null, "Administrador", "ADMINISTRADOR" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "a93eb77c-c04d-43df-a900-123957752adf", 0, "8cc24f45-d16a-4ed1-bf42-b5e2b477e8ea", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAELIavoJTmPlgRGMKF32xgc0KLv9JuTLB25dimBmqCxEvO1xOsZLwUr6ijkXnLApUeg==", null, false, "ad91ea04-29b0-4baf-83f0-2f0900a349be", false, "Admin" });
+                values: new object[] { "c14b663d-dc08-455b-8a73-2b97e864926f", 0, "1a0862e3-1880-4d4d-b5c8-94b785ebae91", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAECPnsjlmspV3paC2acs30pnO0jAmHp9t5vpNmfWHlHRj4KLPA4YQBWVV+XEDj/DMqQ==", null, false, "6f83cafb-d910-43af-b3e4-aa40b875e934", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "ComidaRecomendada",
@@ -333,14 +333,14 @@ namespace Academia.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "20295eba-248f-4678-9e0d-1d02ba440e8e", "a93eb77c-c04d-43df-a900-123957752adf" },
-                    { "bc6300f2-3d46-487a-b068-954b5e8d4f4d", "a93eb77c-c04d-43df-a900-123957752adf" }
+                    { "a39f25be-af0c-4e31-8021-200096f7a4e4", "c14b663d-dc08-455b-8a73-2b97e864926f" },
+                    { "ce803062-3f47-4821-8c6c-7777cdd97497", "c14b663d-dc08-455b-8a73-2b97e864926f" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "DataNascimento", "Foto", "Nome" },
-                values: new object[] { "a93eb77c-c04d-43df-a900-123957752adf", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "/imgs/batata doce.jpg", "Douglas" });
+                values: new object[] { "c14b663d-dc08-455b-8a73-2b97e864926f", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "/imgs/batata doce.jpg", "Douglas" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
