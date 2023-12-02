@@ -137,7 +137,7 @@ ol li:hover a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: url(/imgs\ princ.jpg);
+    background-image: url(~\imgs\banner.jpg);
     background-size: cover;
     background-position: center;
     filter: brightness(40%);

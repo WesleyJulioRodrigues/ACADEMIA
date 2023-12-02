@@ -7,7 +7,7 @@
 <main class="container-fluid p-4">
     <form method="post" asp-action="Login" asp-controller="Account">
         <div class="text-center mb-4">
-            <img src="~/img/logo2.png" alt="Logo" width="350">
+            <img src="~/imgs/HF.png" alt="Logo" width="350">
         </div>
         <input type="hidden" asp-for="UrlRetorno">
         <div asp-validation-summary="ModelOnly" class="text-danger" hidden></div>
@@ -29,7 +29,7 @@
             <label asp-for="Lembrar" class="form-check-label"></label>
         </div>
         
-        <button type="submit" class="w-100 btn btn-primary">Entrar</button>
+        <button type="submit" class="w-100 btn btn-danger">Entrar</button>
         @* <a asp-action="" class="d-block text-center mt-3 text-decoration-none">Esqueceu sua Senha?</a>
 
         <div class="separator">
