@@ -13,10 +13,12 @@ namespace Academia.Controllers
     public class ExerciciosController : Controller
     {
         private readonly AppDbContext _context;
+          private readonly IWebHostEnvironment _hostEnvironment;
 
-        public ExerciciosController(AppDbContext context)
+    public ExerciciosController(AppDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
+            _hostEnvironment = hostEnvironment;
         }
 
         // GET: Exercicios
@@ -54,12 +56,28 @@ namespace Academia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Foto")] Exercicio exercicio)
+        public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Foto")] Exercicio exercicio, IFormFile formFile)
         {
-            if (ModelState.IsValid)
+             if (ModelState.IsValid)
             {
                 _context.Add(exercicio);
                 await _context.SaveChangesAsync();
+
+                // Se tiver arquivo de imagem, salva a imagem no servidor com o ID do filme e adiciona o nome e caminho da imagem no banco
+                if (formFile != null)
+                {
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = exercicio.Id.ToString() + Path.GetExtension(formFile.FileName);
+                    string uploads = Path.Combine(wwwRootPath, @"imgs\exercicios");
+                    string newFile = Path.Combine(uploads, fileName);
+                    using (var stream = new FileStream(newFile, FileMode.Create))
+                    {
+                        formFile.CopyTo(stream);
+                    }
+                    exercicio.Foto = "/imgs/exercicios/" + fileName;
+                    await _context.SaveChangesAsync();
+                }
+
                 return RedirectToAction(nameof(Index));
             }
             return View(exercicio);
@@ -86,7 +104,7 @@ namespace Academia.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao,Foto")] Exercicio exercicio)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao,Foto")] Exercicio exercicio, IFormFile formFile)
         {
             if (id != exercicio.Id)
             {
@@ -95,8 +113,33 @@ namespace Academia.Controllers
 
             if (ModelState.IsValid)
             {
-                try
+              try
                 {
+
+                    // Se tiver arquivo de imagem, salva a imagem no servidor com o ID do filme e adiciona o nome e caminho da imagem no banco
+                    if (formFile != null)
+                    {
+                        string wwwRootPath = _hostEnvironment.WebRootPath;
+                        if (exercicio.Foto != null)
+                        {
+                            string oldFile = Path.Combine(wwwRootPath, exercicio.Foto.TrimStart('\\'));
+                            if (System.IO.File.Exists(oldFile))
+                            {
+                                System.IO.File.Delete(oldFile);
+                            }
+                        }
+
+                        string fileName = exercicio.Id.ToString() + Path.GetExtension(formFile.FileName);
+                        string uploads = Path.Combine(wwwRootPath, @"imgs\exercicios");
+                        string newFile = Path.Combine(uploads, fileName);
+                        using (var stream = new FileStream(newFile, FileMode.Create))
+                        {
+                            formFile.CopyTo(stream);
+                        }
+                        exercicio.Foto = "/imgs/exercicios/" + fileName;
+                        await _context.SaveChangesAsync();
+                    }
+
                     _context.Update(exercicio);
                     await _context.SaveChangesAsync();
                 }
@@ -113,7 +156,7 @@ namespace Academia.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(exercicio);
+            return View(exercicio); 
         }
 
         // GET: Exercicios/Delete/5
