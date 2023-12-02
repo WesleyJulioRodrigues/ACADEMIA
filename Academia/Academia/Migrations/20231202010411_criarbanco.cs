@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Academia.Migrations
 {
     /// <inheritdoc />
-    public partial class criarBanco : Migration
+    public partial class criarbanco : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -81,9 +81,6 @@ namespace Academia.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Descricao = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Tipo = table.Column<string>(type: "varchar(60)", maxLength: 60, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    Calorias = table.Column<int>(type: "int", nullable: false),
                     Foto = table.Column<string>(type: "varchar(300)", maxLength: 300, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
@@ -291,22 +288,22 @@ namespace Academia.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "8ac635ae-38c7-4aec-81a8-f238d85f226b", null, "Administrador", "ADMINISTRADOR" },
-                    { "ccf7ba4f-721c-4299-94b7-37ff4cf7f9dc", null, "Funcionário", "FUNCIONARIO" }
+                    { "20295eba-248f-4678-9e0d-1d02ba440e8e", null, "Funcionário", "FUNCIONARIO" },
+                    { "bc6300f2-3d46-487a-b068-954b5e8d4f4d", null, "Administrador", "ADMINISTRADOR" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "e9549b9f-7c69-47a0-bca2-bef3306df01a", 0, "d22ffbf0-0cb6-4d95-9efd-bc7000af602b", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAEIfFhDVWI/e/crVRX/kZJjfh97B9AEvIylY2E03iHLmG4Ce6BxoOG5e/2+oJmq9dyg==", null, false, "b0e1bd60-d48d-4d1b-8fb2-e30c01e81234", false, "Admin" });
+                values: new object[] { "a93eb77c-c04d-43df-a900-123957752adf", 0, "8cc24f45-d16a-4ed1-bf42-b5e2b477e8ea", "admin@academia.com", true, false, null, "ADMIN@ACADEMIA.COM", "ADMIN", "AQAAAAIAAYagAAAAELIavoJTmPlgRGMKF32xgc0KLv9JuTLB25dimBmqCxEvO1xOsZLwUr6ijkXnLApUeg==", null, false, "ad91ea04-29b0-4baf-83f0-2f0900a349be", false, "Admin" });
 
             migrationBuilder.InsertData(
                 table: "ComidaRecomendada",
-                columns: new[] { "Id", "Calorias", "Descricao", "Foto", "Nome", "Tipo" },
+                columns: new[] { "Id", "Descricao", "Foto", "Nome" },
                 values: new object[,]
                 {
-                    { 1, 0, "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade", "/imgs/comidas/Batata doce.jpg", "Batata Doce", "Tubérculo, Carboidrato" },
-                    { 2, 0, "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.", "/imgs/comidas/Frango.jpg", "Frango", "Proteína animal" }
+                    { 1, "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade", "/imgs/comidas/Batata doce.jpg", "Batata Doce" },
+                    { 2, "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.", "/imgs/comidas/Frango.jpg", "Frango" }
                 });
 
             migrationBuilder.InsertData(
@@ -336,14 +333,14 @@ namespace Academia.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "8ac635ae-38c7-4aec-81a8-f238d85f226b", "e9549b9f-7c69-47a0-bca2-bef3306df01a" },
-                    { "ccf7ba4f-721c-4299-94b7-37ff4cf7f9dc", "e9549b9f-7c69-47a0-bca2-bef3306df01a" }
+                    { "20295eba-248f-4678-9e0d-1d02ba440e8e", "a93eb77c-c04d-43df-a900-123957752adf" },
+                    { "bc6300f2-3d46-487a-b068-954b5e8d4f4d", "a93eb77c-c04d-43df-a900-123957752adf" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Usuario",
                 columns: new[] { "UsuarioId", "DataNascimento", "Foto", "Nome" },
-                values: new object[] { "e9549b9f-7c69-47a0-bca2-bef3306df01a", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "/imgs/batata doce.jpg", "Douglas" });
+                values: new object[] { "a93eb77c-c04d-43df-a900-123957752adf", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "/imgs/batata doce.jpg", "Douglas" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

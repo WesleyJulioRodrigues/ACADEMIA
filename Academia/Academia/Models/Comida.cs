@@ -18,13 +18,6 @@ public class Comida
     [StringLength(1000)]
     public string Descricao { get; set; }
 
-    [Required]
-    [StringLength(60)]
-    public string Tipo { get; set; }
-
-    [Range(0, int.MaxValue, ErrorMessage = "As calorias devem ser um número positivo.")]
-    public int Calorias { get; set; }
-
     [StringLength(300)]
     public string Foto { get; set; }
 }

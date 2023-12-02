@@ -25,9 +25,6 @@ namespace Academia.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int>("Calorias")
-                        .HasColumnType("int");
-
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(1000)
@@ -42,11 +39,6 @@ namespace Academia.Migrations
                         .HasMaxLength(60)
                         .HasColumnType("varchar(60)");
 
-                    b.Property<string>("Tipo")
-                        .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("varchar(60)");
-
                     b.HasKey("Id");
 
                     b.ToTable("ComidaRecomendada");
@@ -55,20 +47,16 @@ namespace Academia.Migrations
                         new
                         {
                             Id = 1,
-                            Calorias = 0,
                             Descricao = "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade",
                             Foto = "/imgs/comidas/Batata doce.jpg",
-                            Nome = "Batata Doce",
-                            Tipo = "Tubérculo, Carboidrato"
+                            Nome = "Batata Doce"
                         },
                         new
                         {
                             Id = 2,
-                            Calorias = 0,
                             Descricao = "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.",
                             Foto = "/imgs/comidas/Frango.jpg",
-                            Nome = "Frango",
-                            Tipo = "Proteína animal"
+                            Nome = "Frango"
                         });
                 });
 
@@ -214,7 +202,7 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "e9549b9f-7c69-47a0-bca2-bef3306df01a",
+                            UsuarioId = "a93eb77c-c04d-43df-a900-123957752adf",
                             DataNascimento = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/imgs/batata doce.jpg",
                             Nome = "Douglas"
@@ -249,13 +237,13 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "8ac635ae-38c7-4aec-81a8-f238d85f226b",
+                            Id = "bc6300f2-3d46-487a-b068-954b5e8d4f4d",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "ccf7ba4f-721c-4299-94b7-37ff4cf7f9dc",
+                            Id = "20295eba-248f-4678-9e0d-1d02ba440e8e",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         });
@@ -350,17 +338,17 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "e9549b9f-7c69-47a0-bca2-bef3306df01a",
+                            Id = "a93eb77c-c04d-43df-a900-123957752adf",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d22ffbf0-0cb6-4d95-9efd-bc7000af602b",
+                            ConcurrencyStamp = "8cc24f45-d16a-4ed1-bf42-b5e2b477e8ea",
                             Email = "admin@academia.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ACADEMIA.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIfFhDVWI/e/crVRX/kZJjfh97B9AEvIylY2E03iHLmG4Ce6BxoOG5e/2+oJmq9dyg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELIavoJTmPlgRGMKF32xgc0KLv9JuTLB25dimBmqCxEvO1xOsZLwUr6ijkXnLApUeg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b0e1bd60-d48d-4d1b-8fb2-e30c01e81234",
+                            SecurityStamp = "ad91ea04-29b0-4baf-83f0-2f0900a349be",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -428,13 +416,13 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "e9549b9f-7c69-47a0-bca2-bef3306df01a",
-                            RoleId = "8ac635ae-38c7-4aec-81a8-f238d85f226b"
+                            UserId = "a93eb77c-c04d-43df-a900-123957752adf",
+                            RoleId = "bc6300f2-3d46-487a-b068-954b5e8d4f4d"
                         },
                         new
                         {
-                            UserId = "e9549b9f-7c69-47a0-bca2-bef3306df01a",
-                            RoleId = "ccf7ba4f-721c-4299-94b7-37ff4cf7f9dc"
+                            UserId = "a93eb77c-c04d-43df-a900-123957752adf",
+                            RoleId = "20295eba-248f-4678-9e0d-1d02ba440e8e"
                         });
                 });
 

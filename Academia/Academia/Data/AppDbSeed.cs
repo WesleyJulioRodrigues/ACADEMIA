@@ -12,15 +12,13 @@ public class AppDbSeed
                 Id = 1,
                 Nome = "Batata Doce",
                 Descricao = "A batata-doce é considerada uma fonte de carboidrato bastante saudável, rica em fibras, proteínas, vitaminas do complexo B, vitamina A, C e diferentes sais minerais. A presença de tantas vitaminas fortalece o sistema imunológico, enquanto os sais minerais ajudam a controlar a pressão arterial. É uma fonte de carboidrato complexo de lenta absorção, fornecendo muita energia durante treinos de alta intensidade",
-                Foto = "/imgs/comidas/Batata doce.jpg",
-                Tipo = "Tubérculo, Carboidrato"
+                Foto = "/imgs/comidas/Batata doce.jpg"
             },
             new() {
                 Id = 2,
                 Nome = "Frango",
                 Descricao = "A carne de frango é uma ótima opção de proteína de alto valor biológico, ou seja, proteína que contém todos os aminoácidos essenciais que precisamos obter através da alimentação. É rica em vitaminas como a B12 e outras do complexo B, além de vitamina E, e minerais como selênio, potássio, ferro, zinco e outros.",
-                Foto = "/imgs/comidas/Frango.jpg",
-                Tipo = "Proteína animal"
+                Foto = "/imgs/comidas/Frango.jpg"
             },
 
         };
