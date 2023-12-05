@@ -137,7 +137,7 @@ ol li:hover a {
     height: 100%;
     width: 100%;
     position: absolute;
-    background-image: url(~\imgs\banner.jpg);
+    background-image: url(https://s1.1zoom.me/big3/516/Men_Bodybuilding_Dumbbells_Hands_Black_and_white_582615_4608x3456.jpg);
     background-size: cover;
     background-position: center;
     filter: brightness(40%);
@@ -625,3 +625,11 @@ span {
 .menu__item:hover {
     background-color: #b80d0d67;
 }
+
+.imgcu
+{
+    width: auto;
+    height: auto;
+    
+}
+
