@@ -13,9 +13,9 @@ namespace Academia.Controllers
     public class ExerciciosController : Controller
     {
         private readonly AppDbContext _context;
-          private readonly IWebHostEnvironment _hostEnvironment;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-    public ExerciciosController(AppDbContext context, IWebHostEnvironment hostEnvironment)
+        public ExerciciosController(AppDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
             _hostEnvironment = hostEnvironment;
@@ -24,7 +24,7 @@ namespace Academia.Controllers
         // GET: Exercicios
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Exercicios.ToListAsync());
+            return View(await _context.Exercicios.ToListAsync());
         }
 
         // GET: Exercicios/Details/5
@@ -58,7 +58,7 @@ namespace Academia.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,Foto")] Exercicio exercicio, IFormFile formFile)
         {
-             if (ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 _context.Add(exercicio);
                 await _context.SaveChangesAsync();
@@ -113,7 +113,7 @@ namespace Academia.Controllers
 
             if (ModelState.IsValid)
             {
-              try
+                try
                 {
 
                     // Se tiver arquivo de imagem, salva a imagem no servidor com o ID do filme e adiciona o nome e caminho da imagem no banco
@@ -156,7 +156,7 @@ namespace Academia.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(exercicio); 
+            return View(exercicio);
         }
 
         // GET: Exercicios/Delete/5
@@ -191,14 +191,14 @@ namespace Academia.Controllers
             {
                 _context.Exercicios.Remove(exercicio);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ExercicioExists(int id)
         {
-          return _context.Exercicios.Any(e => e.Id == id);
+            return _context.Exercicios.Any(e => e.Id == id);
         }
     }
 }

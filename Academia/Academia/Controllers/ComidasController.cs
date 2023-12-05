@@ -13,10 +13,10 @@ namespace Academia.Controllers
     public class ComidasController : Controller
     {
         private readonly AppDbContext _context;
-        
+
         private readonly IWebHostEnvironment _hostEnvironment;
-  
-    
+
+
         public ComidasController(AppDbContext context, IWebHostEnvironment hostEnvironment)
         {
             _context = context;
@@ -26,7 +26,7 @@ namespace Academia.Controllers
         // GET: Comidas
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Comidas.ToListAsync());
+            return View(await _context.Comidas.ToListAsync());
         }
 
         // GET: Comidas/Details/5
@@ -80,7 +80,7 @@ namespace Academia.Controllers
                 }
 
                 return RedirectToAction(nameof(Index));
-            }    
+            }
             return View(comida);
         }
 
@@ -114,7 +114,7 @@ namespace Academia.Controllers
 
             if (ModelState.IsValid)
             {
-               try
+                try
                 {
 
                     // Se tiver arquivo de imagem, salva a imagem no servidor com o ID do filme e adiciona o nome e caminho da imagem no banco
