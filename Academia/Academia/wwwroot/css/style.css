@@ -611,7 +611,7 @@ span {
     transition-duration: .25s;
 }
 
-.menu__item {
+.menu__box {
     display: block;
     padding: 12px 24px;
     color: #bcbcbc;
@@ -630,6 +630,5 @@ span {
 {
     width: auto;
     height: auto;
-    
 }
 
