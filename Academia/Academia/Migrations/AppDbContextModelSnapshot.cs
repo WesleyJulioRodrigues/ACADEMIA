@@ -202,7 +202,7 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            UsuarioId = "c14b663d-dc08-455b-8a73-2b97e864926f",
+                            UsuarioId = "18574c27-939e-4884-9853-83a1bf69d759",
                             DataNascimento = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Foto = "/imgs/batata doce.jpg",
                             Nome = "Douglas"
@@ -237,13 +237,13 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ce803062-3f47-4821-8c6c-7777cdd97497",
+                            Id = "2c3e60d1-f82a-4b0c-95eb-062ac3c69872",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "a39f25be-af0c-4e31-8021-200096f7a4e4",
+                            Id = "85d2266f-912c-4853-a819-b997235a2184",
                             Name = "Funcionário",
                             NormalizedName = "FUNCIONARIO"
                         });
@@ -338,17 +338,17 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "c14b663d-dc08-455b-8a73-2b97e864926f",
+                            Id = "18574c27-939e-4884-9853-83a1bf69d759",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1a0862e3-1880-4d4d-b5c8-94b785ebae91",
+                            ConcurrencyStamp = "e8e6c17b-88c8-480b-8e49-98747eba5bed",
                             Email = "admin@academia.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@ACADEMIA.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAECPnsjlmspV3paC2acs30pnO0jAmHp9t5vpNmfWHlHRj4KLPA4YQBWVV+XEDj/DMqQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDBNBwQqAD2k3mNbXPIJLXVZxiOEgqS5Twj7E252QVPl3NEgQoJjHHQEai5eZJGt9A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6f83cafb-d910-43af-b3e4-aa40b875e934",
+                            SecurityStamp = "e7f06a3c-3590-4040-908c-e73adc0e0b0f",
                             TwoFactorEnabled = false,
                             UserName = "Admin"
                         });
@@ -416,13 +416,13 @@ namespace Academia.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "c14b663d-dc08-455b-8a73-2b97e864926f",
-                            RoleId = "ce803062-3f47-4821-8c6c-7777cdd97497"
+                            UserId = "18574c27-939e-4884-9853-83a1bf69d759",
+                            RoleId = "2c3e60d1-f82a-4b0c-95eb-062ac3c69872"
                         },
                         new
                         {
-                            UserId = "c14b663d-dc08-455b-8a73-2b97e864926f",
-                            RoleId = "a39f25be-af0c-4e31-8021-200096f7a4e4"
+                            UserId = "18574c27-939e-4884-9853-83a1bf69d759",
+                            RoleId = "85d2266f-912c-4853-a819-b997235a2184"
                         });
                 });
 
